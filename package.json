@@ -13,11 +13,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.1",
     "mongoose": "^5.11.2",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
-    "handlebars": "^4.5.0",
+    "handlebars": "^4.7.6",
     "nodemon": "^1.19.4"
   }
 }
