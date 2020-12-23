@@ -11,13 +11,14 @@ const courseSchema = new Schema({
   },
   img: String,
   userId: {
-    type: Schema.Types.ObjectId, //Тут типа должен быть userID
+    type: Schema.Types.ObjectId,
     ref: 'User'
   }
 })
 
 courseSchema.method('toClient', function() {
   const course = this.toObject()
+
   course.id = course._id
   delete course._id
 
